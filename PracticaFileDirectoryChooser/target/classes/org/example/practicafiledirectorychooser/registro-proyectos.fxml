@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane
+        prefHeight="461.0"
+        prefWidth="442.0"
+        xmlns="http://javafx.com/javafx/17.0.12"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="org.example.practicafiledirectorychooser.RegistroProyectosController">
+
+   <children>
+
+      <Label
+              layoutX="22.0"
+              layoutY="22.0"
+              prefHeight="28.0"
+              prefWidth="173.0"
+              text="Registro de Proyectos">
+
+         <font>
+            <Font name="System Bold" size="16.0"/>
+         </font>
+
+      </Label>
+
+
+      <Line
+              endX="322.4"
+              layoutX="109.0"
+              layoutY="398.0"
+              opacity="0.2"
+              startX="-100.0"/>
+
+
+      <Label
+              layoutX="22.0"
+              layoutY="62.0"
+              text="Nombre del proyecto"/>
+
+
+      <TextField
+              fx:id="txtnombreProyecto"
+              layoutX="22.0"
+              layoutY="87.0"
+              prefHeight="26.0"
+              prefWidth="403.0"
+              promptText="Nombre del proyecto"/>
+
+
+      <Label
+              layoutX="22.0"
+              layoutY="123.0"
+              text="Responsable"/>
+
+
+      <TextField
+              fx:id="txtResponsable"
+              layoutX="21.0"
+              layoutY="147.0"
+              prefHeight="26.0"
+              prefWidth="403.0"
+              promptText="Nombre del responsable"/>
+
+
+      <Label
+              layoutX="22.0"
+              layoutY="183.0"
+              text="Descripción"/>
+
+
+      <TextArea
+              fx:id="txtDescripcion"
+              layoutX="21.0"
+              layoutY="209.0"
+              prefHeight="55.0"
+              prefWidth="403.0"
+              promptText="Descripción breve del proyecto"
+              wrapText="true"/>
+
+
+      <Label
+              layoutX="22.0"
+              layoutY="276.0"
+              text="Archivo de requerimiento"/>
+
+
+      <TextField
+              fx:id="txtArchivo"
+              layoutX="20.0"
+              layoutY="301.0"
+              prefHeight="26.0"
+              prefWidth="314.0"
+              editable="false"
+              promptText="Seleccione un archivo"/>
+
+
+      <Button
+              fx:id="btnSeleccionarArchivo"
+              layoutX="348.0"
+              layoutY="301.0"
+              mnemonicParsing="false"
+              onAction="#seleccionarArchivo"
+              text="Seleccionar"/>
+
+
+      <Label
+              layoutX="22.0"
+              layoutY="337.0"
+              text="Directorio del proyecto"/>
+
+
+      <TextField
+              fx:id="txtDirectorio"
+              layoutX="18.0"
+              layoutY="365.0"
+              prefHeight="26.0"
+              prefWidth="314.0"
+              editable="false"
+              promptText="Seleccione un directorio"/>
+
+
+      <Button
+              fx:id="btnSeleccionarDirectorio"
+              layoutX="347.0"
+              layoutY="365.0"
+              mnemonicParsing="false"
+              onAction="#seleccionarDirectorio"
+              text="Seleccionar"/>
+
+
+      <Button
+              fx:id="btnGuardar"
+              layoutX="18.0"
+              layoutY="413.0"
+              mnemonicParsing="false"
+              onAction="#guardarProyecto"
+              text="Guardar proyecto"
+              style="-fx-background-color: #FF66B2;"/>
+
+
+      <Button
+              fx:id="btnLimpiar"
+              layoutX="136.0"
+              layoutY="413.0"
+              mnemonicParsing="false"
+              onAction="#limpiar"
+              text="Limpiar"/>
+
+   </children>
+
+</AnchorPane>
