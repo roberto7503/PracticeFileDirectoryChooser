@@ -5,6 +5,7 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
 
 <VBox prefHeight="500.0"
       prefWidth="442.0"
@@ -13,40 +14,27 @@
       fx:controller="org.example.practicafiledirectorychooser.MenuPrincipalController">
 
     <children>
-
         <MenuBar>
-
             <menus>
-
-                <Menu mnemonicParsing="false"
-                      text="Navegación">
-
+                <Menu mnemonicParsing="false" text="Navegación">
                     <items>
-
                         <MenuItem
                                 mnemonicParsing="false"
                                 text="Registro de Proyectos"
                                 onAction="#abrirRegistroProyectos"/>
-
                         <MenuItem
                                 mnemonicParsing="false"
                                 text="Registro de Estudiantes"
                                 onAction="#abrirRegistroEstudiantes"/>
-
                     </items>
-
                 </Menu>
-
             </menus>
-
         </MenuBar>
 
-
-        <StackPane
-                fx:id="contentArea"
-                prefHeight="470.0"
-                prefWidth="442.0"/>
-
+        <StackPane fx:id="contentArea" prefHeight="470.0" prefWidth="442.0">
+            <children>
+                <Label text="Bienvenido al Sistema de Gestión" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+            </children>
+        </StackPane>
     </children>
-
 </VBox>
