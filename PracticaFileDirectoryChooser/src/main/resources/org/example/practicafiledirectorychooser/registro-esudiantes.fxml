@@ -15,54 +15,23 @@
 
     <children>
 
-        <Label
-                layoutX="22.0"
-                layoutY="22.0"
-                text="Registro de Estudiantes">
-
+        <Label layoutX="22.0" layoutY="15.0" text="Registro de Estudiantes">
             <font>
                 <Font name="System Bold" size="16.0"/>
             </font>
-
         </Label>
-
-
-        <Label
-                layoutX="22.0"
-                layoutY="80.0"
-                text="Carnet"/>
-
-
-        <TextField
-                fx:id="txtCarnet"
-                layoutX="22.0"
-                layoutY="105.0"
-                prefWidth="400.0"
-                promptText="Número de carnet"/>
-
-
-        <Label
-                layoutX="22.0"
-                layoutY="150.0"
-                text="Nombre completo"/>
-
-
-        <TextField
-                fx:id="txtNombreEstudiante"
-                layoutX="22.0"
-                layoutY="175.0"
-                prefWidth="400.0"
-                promptText="Nombre del estudiante"/>
-
-
-        <Button
-                layoutX="22.0"
-                layoutY="240.0"
-                mnemonicParsing="false"
-                onAction="#guardarEstudiante"
-                text="Guardar Estudiante"
-                style="-fx-background-color: #66B2FF;"/>
+        
+        <Label layoutX="22.0" layoutY="50.0" text="Carnet"/>
+        <TextField fx:id="txtCarnet" layoutX="22.0" layoutY="70.0" prefWidth="400.0" promptText="Número de carnet"/>
+        <Label layoutX="22.0" layoutY="110.0" text="Nombre completo"/>
+        <TextField fx:id="txtNombreEstudiante" layoutX="22.0" layoutY="130.0" prefWidth="400.0" promptText="Nombre del estudiante"/>
+        <Label layoutX="22.0" layoutY="170.0" text="Edad"/>
+        <TextField fx:id="txtEdad" layoutX="22.0" layoutY="190.0" prefWidth="400.0" promptText="Ej. 18"/>
+        <Label layoutX="22.0" layoutY="230.0" text="Carrera"/>
+        <TextField fx:id="txtCarrera" layoutX="22.0" layoutY="250.0" prefWidth="400.0" promptText="Ej. Análisis de Sistemas"/>
+        <Label layoutX="22.0" layoutY="290.0" text="Correo Electrónico"/>
+        <TextField fx:id="txtCorreo" layoutX="22.0" layoutY="310.0" prefWidth="400.0" promptText="ejemplo@uam.edu.ni"/>
+        <Button layoutX="22.0" layoutY="370.0" mnemonicParsing="false" onAction="#guardarEstudiante" text="Guardar Estudiante" style="-fx-background-color: #66B2FF;"/>
 
     </children>
-
 </AnchorPane>
